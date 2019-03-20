@@ -40,7 +40,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEJ-tB-CTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="386" y="103"/>
+            <point key="canvasLocation" x="289" y="94"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -75,11 +75,12 @@
                         <outlet property="descriptionLabel" destination="AzO-CX-HpL" id="WfM-w8-U9o"/>
                         <outlet property="nameLabel" destination="PSj-pa-XYf" id="YbA-X9-oLm"/>
                         <outlet property="urlLabel" destination="p4k-xE-RPd" id="Iz3-4B-wkQ"/>
+                        <segue destination="dCe-N8-OTC" kind="show" identifier="showWebView" id="45k-xH-Q0Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152.8" y="102.99850074962519"/>
+            <point key="canvasLocation" x="1054" y="205"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Vad-8G-Em5">
@@ -90,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45X-K8-gQV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -107,6 +108,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bZl-4t-9gB"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="45X-K8-gQV" id="qKz-lq-2Cm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmZ-b3-Vd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
